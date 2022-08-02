@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int32_t main() {
+    int n;
+    cin>>n;
+    string s;
+    cin>>s;
+    if(n==2)
+    {
+        if(s=="AA"||s=="BB")
+        cout<<"Yes"<<endl;
+        else
+        cout<<"No"<<endl;
+        return 0;
+    }
+    if(s[0]=='B')
+    cout<<"Yes"<<endl;
+    else if(s[n-1]=='A')
+    cout<<"Yes"<<endl;
+    else
+    cout<<"No"<<endl;
+}
